@@ -171,22 +171,12 @@ let books = []
 
 function addBook(prod) {
     let oneBook = []
-    
-    let find = oneBook.find(el => {
-        return el.id === +prod.dataset['id']   
+    oneBook.push ({
+        name: prod.dataset ['name'],
+        price: +prod.dataset['price'],
+        id: +prod.dataset['id'],
+        img: prod.dataset['img']        
     })
-    if (find) {
-        find.quantity++
-    }
-    else {
-        oneBook.push ({
-            name: prod.dataset ['name'],
-            price: +prod.dataset['price'],
-            id: +prod.dataset['id'],
-            img: prod.dataset['img'],
-            quantity: 1
-        })
-    }
         
     oneBook.forEach (el => {
         class Book {
