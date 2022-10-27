@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo-warhammer.png" alt="logo" width="800px" height="120px">
+        <button class="basket" id="btn-basket">корзина</button>
+    </header>
+    <main class="main">
+        <div class="hymn hymn-left"></div>
+        <div class="count" id="card"></div> 
+        <div class="hymn hymn-right"></div>  
+        <div class="bin-main" id="mainBin">
+            <div class="bin-background" id="backgroundBin"></div>
+            <div class="bin-body" id="bodyBin">
+                <div class="bin-header">
+                    <h2 class="bin-name">Корзина</h2>
+                    <span class="bin-krist" id="krist">&times;</span>
+                </div>
+                <div class="bin-count" id="countBin"></div>
+                <div class="bin-footer" id="footerBin">
+                    <span class="total-prise">Стоимость: <span class="total-prise-text"></span></span>
+                    <span class="total-quantity">Книг: <span class="total-quantity-text"></span></span>
+                    <button class="btn-by-oll">Купить</button>
+                </div>
+            </div>
+        </div>             
+    </main>
+
+    <script src="js/app/Bin.js" type="module"></script>
+    <script src="js/app/humn.js" type="module"></script>    
+    <script src="js/main.js" type="module"></script>    
+</body>
+</html>
+
+
+
+
+
